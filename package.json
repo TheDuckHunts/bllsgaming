@@ -1,0 +1,7 @@
+{
+  "name": "bullseye-gaming",
+  "type": "module",
+  "dependencies": {
+    "hono": "^4.6.0"
+  }
+}

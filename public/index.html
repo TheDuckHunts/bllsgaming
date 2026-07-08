@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BullseyeGaming | Minecraft World Maps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff1f1',
+                            100: '#ffdfdf',
+                            200: '#ffc5c5',
+                            300: '#ff9d9d',
+                            400: '#ff6464',
+                            500: '#ff2d2d',
+                            600: '#ed1c1c',
+                            700: '#c81010',
+                            800: '#a51111',
+                            900: '#881414',
+                            950: '#4b0505',
+                        },
+                        neutral: {
+                            950: '#020617'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/style.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.3.1",
+        "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+        "react-dom": "https://esm.sh/react-dom@18.3.1",
+        "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+        "lucide-react": "https://esm.sh/lucide-react@0.400.0?external=react,react-dom",
+        "framer-motion": "https://esm.sh/framer-motion@11?external=react,react-dom",
+        "clsx": "https://esm.sh/clsx@2.1.1",
+        "tailwind-merge": "https://esm.sh/tailwind-merge@2.3.0"
+      }
+    }
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-50 overflow-hidden h-screen">
+    <div id="root"></div>
+    <script type="text/babel" data-type="module" data-presets="react" src="/app.js"></script>
+</body>
+</html>
