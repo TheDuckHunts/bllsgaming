@@ -1,9 +1,12 @@
 import { DurableObject } from "cloudflare:workers";
 import { Hono } from "hono";
 
-export class App extends DurableObject {
-  private app = new Hono()
-    .get("/api/servers", (c) => {
+const app = new Hono();
+
+app.get("/api/servers", (c) => {
+/*export class App extends DurableObject {*/
+ /* private app = new Hono()*/
+    /*.get("/api/servers", (c) => {*/
       // Mock data for Minecraft servers
       const servers = [
         {
@@ -46,7 +49,10 @@ export class App extends DurableObject {
       return c.json(servers);
     });
 
-  async fetch(request: Request) {
+    export default app;
+
+/*  async fetch(request: Request) {
     return this.app.fetch(request);
   }
-}
+}*/
+
